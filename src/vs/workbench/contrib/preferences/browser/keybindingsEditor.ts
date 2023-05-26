@@ -1190,8 +1190,8 @@ class AccessibilityProvider implements IListAccessibilityProvider<IKeybindingIte
 	getAriaLabel({ keybindingItem }: IKeybindingItemEntry): string {
 		const ariaLabel = [
 			keybindingItem.commandLabel ? keybindingItem.commandLabel : keybindingItem.command,
-			keybindingItem.keybinding?.getAriaLabel() || localize('noKeybinding', "No Keybinding assigned."),
-			keybindingItem.when ? keybindingItem.when : localize('noWhen', "No when context."),
+			keybindingItem.keybinding?.getAriaLabel() || localize('noKeybinding', "No keybinding assigned"),
+			keybindingItem.when ? keybindingItem.when : localize('noWhen', "No when context"),
 			isString(keybindingItem.source) ? keybindingItem.source : keybindingItem.source.description ?? keybindingItem.source.identifier.value,
 		];
 		if (this.configurationService.getValue(AccessibilityVerbositySettingId.KeybindingsEditor)) {
