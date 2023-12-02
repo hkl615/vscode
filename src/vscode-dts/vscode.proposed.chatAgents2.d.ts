@@ -19,7 +19,7 @@ declare module 'vscode' {
 		/**
 		 * An error message that is shown to the user.
 		 */
-		message: string;
+		message: string;C#!
 
 		/**
 		 * If partial markdown content was sent over the `progress` callback before the response terminated, then this flag
